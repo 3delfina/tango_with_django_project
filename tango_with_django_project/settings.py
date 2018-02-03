@@ -20,6 +20,8 @@ MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 
 
 
+
+
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 # Quick-start development settings - unsuitable for production
@@ -88,6 +90,10 @@ DATABASES = {
     }
 }
 
+#PASSWORD_HASHERS = (
+#'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+#'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+#)
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -127,3 +133,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [STATIC_DIR, ]
+
+
+LOGIN_URL = '/rango/login/'
